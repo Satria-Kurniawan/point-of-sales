@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.line {
+  @apply w-8 h-[3px] block m-2 transition ease-out duration-300;
+}
