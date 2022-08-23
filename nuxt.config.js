@@ -1,4 +1,5 @@
 export default {
+  target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "point-of-sales",
@@ -43,7 +44,7 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: "https://satria10.000webhostapp.com/api",
+    baseURL: "https://satria10.000webhostapp.com/",
     proxy: true,
   },
 
