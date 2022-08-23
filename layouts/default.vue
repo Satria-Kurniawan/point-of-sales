@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     async getUser() {
-      if (localStorage.getItem("userToken")) {
+      if (localStorage.getItem("userToken") !== null) {
         const response = await this.$axios.get("api/user", {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("userToken"),

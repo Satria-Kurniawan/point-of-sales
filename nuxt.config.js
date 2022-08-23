@@ -46,7 +46,7 @@ export default {
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: "http://api.jsatria.my.id/",
-    proxy: true,
+    // proxy: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -59,14 +59,14 @@ export default {
     },
   },
 
-  proxy: {
-    "/api": {
-      target: "http://api.jsatria.my.id/api",
-      pathRewrite: {
-        "^/api": "/",
-      },
-    },
-  },
+  // proxy: {
+  //   "/api": {
+  //     target: "http://api.jsatria.my.id/api",
+  //     pathRewrite: {
+  //       "^/api": "/",
+  //     },
+  //   },
+  // },
 
   generate: {
     fallback: true,

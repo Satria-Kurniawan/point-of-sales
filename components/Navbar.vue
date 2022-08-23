@@ -51,7 +51,7 @@
               {{ link.name }}
             </nuxt-link>
           </li>
-          <div v-if="!currentUser">
+          <div v-if="currentUser === null">
             <li class="py-4 md:px-4 px-6">
               <nuxt-link to="/auth/login">
                 <Button class="bg-green-500"> Login </Button>
@@ -126,4 +126,3 @@ export default {
 </script>
 
 <style></style>
-,

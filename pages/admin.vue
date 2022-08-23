@@ -1,5 +1,5 @@
 <template>
-  <div v-if="currentUser" class="md:w-full m-5">
+  <div class="md:w-full m-5">
     <span @click="handleOpenForm">
       <Button :class="openForm ? 'bg-red-500 mb-2' : 'bg-green-500 mb-2'">
         {{ !openForm ? "Create" : "Close" }}
@@ -15,9 +15,6 @@
       <ProductsTable @handleEdit="handleEdit" />
     </div>
   </div>
-  <div v-else>
-    {{ $router.push("/auth/login") }}
-  </div>
 </template>
 
 <script>
@@ -27,6 +24,7 @@ import Button from "../components/Button.vue";
 import Form from "../components/Form.vue";
 
 export default {
+  middleware: "authenticated",
   components: {
     ProductsTable,
     Button,
