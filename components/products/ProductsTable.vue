@@ -22,7 +22,7 @@
         >
           <td class="py-2 px-6">
             <img
-              :src="`https://satria10.000webhostapp.com/photos/${product.photo}`"
+              :src="`https://api.jsatria.my.id/photos/${product.photo}`"
               alt="Photo"
               class="w-10 h-10"
             />

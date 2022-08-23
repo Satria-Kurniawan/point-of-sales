@@ -7,7 +7,7 @@
         </div>
         <div class="flex justify-center">
           <img
-            :src="`http://localhost:8000/photos/${product.photo}`"
+            :src="`https://api.jsatria.my.id/photos/${product.photo}`"
             alt="Product Photo"
             class="h-32"
           />
